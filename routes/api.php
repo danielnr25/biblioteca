@@ -31,7 +31,7 @@ Route::middleware('auth:api')->group(function () {
     Route::apiResource("orders",OrderController::class);
 });
 
-// Route::apiResource("customers", CustomerController::class);
-// Route::apiResource("books", BookController::class);
-// Route::apiResource("orders",OrderController::class);
+Route::apiResource("customers", CustomerController::class);
+Route::apiResource("books", BookController::class);
+Route::apiResource("orders",OrderController::class);
 
